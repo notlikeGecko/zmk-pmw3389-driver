@@ -1110,7 +1110,7 @@ static int pmw3389_init(const struct device *dev) {
                         .slave = DT_INST_REG_ADDR(n),                                              \
                     },                                                                             \
             },                                                                                     \
-        .cs_gpio = SPI_CS_GPIOS_DT_SPEC_GET(DT_DRV_INST(n)),                                       \                          \
+        .cs_gpio = SPI_CS_GPIOS_DT_SPEC_GET(DT_DRV_INST(n)),                                       \
     };                                                                                             \
                                                                                                    \
     DEVICE_DT_INST_DEFINE(n, pmw3389_init, NULL, &data##n, &config##n, POST_KERNEL,                \
