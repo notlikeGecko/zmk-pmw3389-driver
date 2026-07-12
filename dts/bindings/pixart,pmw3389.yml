@@ -9,6 +9,16 @@ properties:
   irq-gpios:
     type: phandle-array
     required: true
+  cpi:
+    type: int
+    default: 600
+    description: "CPI value (Range: 50 - 26000, Step: 50)"
+  swap-xy:
+    type: boolean
+  invert-x:
+    type: boolean
+  invert-y:
+    type: boolean
   scroll-layers:
     type: array
     default: []
