@@ -503,7 +503,7 @@ static int pmw3389_async_init_fw_load_verify(const struct device *dev) {
         return err;
     }
 
-    LOG_DBG("Optical chip firmware ID: 0x%x", fw_id);
+    LOG_INF("Optical chip firmware ID: 0x%x", fw_id);
     if (fw_id != PMW3389_FIRMWARE_ID) {
         LOG_ERR("Chip is not running from SROM! ID: 0x%x", fw_id);
         return -EIO;
@@ -516,6 +516,7 @@ static int pmw3389_async_init_fw_load_verify(const struct device *dev) {
         return err;
     }
 
+    LOG_INF("Product ID: 0x%x", product_id)
     if (product_id != PMW3389_PRODUCT_ID) {
         LOG_ERR("Invalid product id! ID: 0x%x", product_id);
         return -EIO;
