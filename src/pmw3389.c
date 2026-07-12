@@ -516,7 +516,7 @@ static int pmw3389_async_init_fw_load_verify(const struct device *dev) {
         return err;
     }
 
-    LOG_INF("Product ID: 0x%x", product_id)
+    LOG_INF("Product ID: 0x%x", product_id);
     if (product_id != PMW3389_PRODUCT_ID) {
         LOG_ERR("Invalid product id! ID: 0x%x", product_id);
         return -EIO;
