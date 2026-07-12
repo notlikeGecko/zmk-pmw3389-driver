@@ -1,7 +1,7 @@
 description: |
-  Sensor driver for the pixart PMW3360 mouse sensor 
+  Sensor driver for the pixart PMW3389 mouse sensor 
 
-compatible: "pixart,pmw3360"
+compatible: "pixart,pmw3389"
 
 include: spi-device.yaml
 
