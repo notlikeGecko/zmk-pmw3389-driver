@@ -505,7 +505,7 @@ static int pmw3389_async_init_fw_load_verify(const struct device *dev) {
 
     LOG_DBG("Optical chip firmware ID: 0x%x", fw_id);
     if (fw_id != PMW3389_FIRMWARE_ID) {
-        LOG_ERR("Chip is not running from SROM!");
+        LOG_ERR("Chip is not running from SROM! ID: 0x%x", fw_id);
         return -EIO;
     }
 
