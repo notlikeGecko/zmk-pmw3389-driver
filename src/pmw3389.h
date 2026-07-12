@@ -87,7 +87,7 @@ extern "C" {
 
 /* Sensor identification values */
 #define PMW3389_PRODUCT_ID 0x47
-#define PMW3389_FIRMWARE_ID 0xE8
+#define PMW3389_FIRMWARE_ID 0x2A
 
 /* Power-up register commands */
 #define PMW3389_POWERUP_CMD_RESET 0x5A
