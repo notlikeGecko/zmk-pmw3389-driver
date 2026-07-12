@@ -26,7 +26,7 @@ struct pixart_data {
     int32_t scroll_delta_x;
     int32_t scroll_delta_y;
 
-#ifdef CONFIG_PMW3610_POLLING_RATE_125_SW
+#ifdef CONFIG_PMW3389_POLLING_RATE_125_SW
     int64_t last_poll_time;
     int16_t last_x;
     int16_t last_y;
